@@ -21,6 +21,7 @@ data class RestaurantModel(val name: String?, val address: String?,
         parcel.writeString(address)
         parcel.writeString(delivery_charge)
         parcel.writeString(image)
+        parcel.writeParcelable(hours,flags)
         parcel.writeTypedList(menus)
     }
 

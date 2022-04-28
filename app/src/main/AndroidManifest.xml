@@ -12,11 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodApp">
         <activity
-            android:name=".PlaceYourOrderActivity"
-            android:exported="false" />
+            android:name=".SuccessOrderActivity"
+            android:exported="true"/>
         <activity
-            android:name=".RestaurantMenuActivity"
-            android:exported="false" />
+            android:name=".PlaceYourOrderActivity"
+            android:exported="true"/>
+        <activity android:name=".RestaurantMenuActivity" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">

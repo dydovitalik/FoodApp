@@ -7,10 +7,12 @@
         <entry key="app/src/main/res/drawable/ic_add_circle.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_remove_circle.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_place_your_order.xml" value="0.16304347826086957" />
+        <entry key="app/src/main/res/layout/activity_place_your_order.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_restaurant_menu.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_success_order.xml" value="0.1" />
         <entry key="app/src/main/res/layout/menu_list_row.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/placeyourorder_list_row.xml" value="0.14402173913043478" />
         <entry key="app/src/main/res/layout/recycler_restaurant_list_row.xml" value="0.1" />
       </map>
     </option>

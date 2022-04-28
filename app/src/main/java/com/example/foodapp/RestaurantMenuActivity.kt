@@ -28,7 +28,6 @@ class RestaurantMenuActivity : AppCompatActivity(), MenuListAdapter.MenuListClic
 
         val actionBar: ActionBar? = supportActionBar
         actionBar?.setTitle(restaurantModel?.name)
-        actionBar?.setSubtitle(restaurantModel?.address)
         actionBar?.setDisplayHomeAsUpEnabled(true)
 
         menuList = restaurantModel?.menus

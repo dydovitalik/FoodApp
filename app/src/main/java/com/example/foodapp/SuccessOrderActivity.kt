@@ -14,7 +14,6 @@ class SuccessOrderActivity : AppCompatActivity() {
         val restaurantModel: RestaurantModel? = intent.getParcelableExtra("RestaurantModel")
         val actionBar: ActionBar? = supportActionBar
         actionBar?.setTitle(restaurantModel?.name)
-        actionBar?.setSubtitle(restaurantModel?.address)
         actionBar?.setDisplayHomeAsUpEnabled(false)
 
         buttonDone.setOnClickListener {

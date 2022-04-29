@@ -36,11 +36,12 @@ data class RestaurantModel(val name: String?,
     }
 }
 
-data class Menus(val name: String?, val price: Float, val url: String?, var totalInCart: Int) :
+data class Menus(val name: String?, val price: Float, val weight: Int ,val url: String?, var totalInCart: Int) :
     Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readFloat(),
+        parcel.readInt(),
         parcel.readString(),
         parcel.readInt()
     ) {
@@ -49,6 +50,7 @@ data class Menus(val name: String?, val price: Float, val url: String?, var tota
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(name)
         parcel.writeFloat(price)
+        parcel.writeInt(weight)
         parcel.writeString(url)
         parcel.writeInt(totalInCart)
     }

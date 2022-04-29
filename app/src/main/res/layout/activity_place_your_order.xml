@@ -7,6 +7,8 @@
     tools:context=".PlaceYourOrderActivity"
     android:paddingBottom="10dp"
     >
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,33 +18,33 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/cartItemsRecyclerView"
             android:layout_margin="10dp"
             android:text="Total items in cart"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:textStyle="bold"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/cartItemsRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="@id/tvTotalItems"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvTotalItems"
             android:nestedScrollingEnabled="false"/>
 
-        <TextView android:id="@+id/tvSubtotal"
+        <TextView android:id="@+id/tvAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cartItemsRecyclerView"
             android:layout_margin="10dp"
-            android:text="Sub total"
+            android:text="Amount"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
-        <TextView android:id="@+id/tvSubtotalAmount"
+        <TextView android:id="@+id/tvTotalAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
@@ -57,7 +59,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvSubtotalAmount"
+            app:layout_constraintTop_toBottomOf="@id/tvTotalAmount"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:text="Place your order"
             android:textSize="16sp"
             android:textStyle="bold"

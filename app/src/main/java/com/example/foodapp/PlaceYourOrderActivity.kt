@@ -44,7 +44,7 @@ class PlaceYourOrderActivity : AppCompatActivity() {
         for(menu in restaurantModel?.menus!!){
             subTotalAmount += menu?.price!! * menu?.totalInCart!!
         }
-        tvSubtotalAmount.text = "$" + String.format("%.2f", subTotalAmount)
+        tvTotalAmount.text = "$" + String.format("%.2f", subTotalAmount)
 
     }
 

@@ -31,12 +31,14 @@ class PlaceYourOrderAdapter(val menuList: List<Menus?>?):RecyclerView.Adapter<Pl
         val thumbImage: ImageView = view.findViewById(R.id.thumbImage)
         val menuName: TextView = view.findViewById(R.id.menuName)
         val menuPrice: TextView = view.findViewById(R.id.menuPrice)
+        val menuWeight: TextView = view.findViewById(R.id.menuWeight)
         val menuQty: TextView = view.findViewById(R.id.menuQty)
 
         fun bind(menu:Menus){
            Glide.with(thumbImage).load(menu?.url).into(thumbImage)
            menuName.text = menu?.name!!
-           menuPrice.text = "Price $" + String.format("%.2f",menu?.price * menu?.totalInCart)
+           menuPrice.text = "Price $ " + String.format("%.2f",menu?.price * menu?.totalInCart)
+           menuWeight.text = "Weight G " + String.format("%d",menu?.weight)
            menuQty.text = "Qty :" + menu?.totalInCart
         }
     }

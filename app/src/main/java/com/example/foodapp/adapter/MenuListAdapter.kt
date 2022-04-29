@@ -36,6 +36,7 @@ class MenuListAdapter(val menuList: List<Menus?>?, val clickListener: MenuListCl
        var thumbImage: ImageView = view.thumbImage
        var menuName: TextView = view.menuName
        var menuPrice: TextView = view.menuPrice
+       var menuWeight: TextView = view.menuWeight
        var addToCartButton: TextView = view.addToCartButton
        var addMoreLayout: LinearLayout = view.addMoreLayout
        var imageMinus: ImageView = view.imageMinus
@@ -49,6 +50,8 @@ class MenuListAdapter(val menuList: List<Menus?>?, val clickListener: MenuListCl
            menuName.text = menus?.name
 
            menuPrice.text = "Price: $ ${menus?.price}"
+
+           menuWeight.text = "Weight: G ${menus?.weight}"
 
            addToCartButton.setOnClickListener {
             menus?.totalInCart = 1
